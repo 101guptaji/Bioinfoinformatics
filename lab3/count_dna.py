@@ -1,0 +1,11 @@
+# Python code to count A,C,G,T in dna string 
+f=input("enter file name")
+file = open(f, "r") 
+n=file.read() 
+print(n)
+print(len(n))
+a=n.count("A")
+c=n.count("C")
+g=n.count("G")
+t=n.count("T")
+print(a,c,g,t,sep=" ")

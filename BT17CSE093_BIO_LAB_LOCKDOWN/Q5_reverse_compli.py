@@ -1,0 +1,8 @@
+sf=open('rev_input.txt','r')
+s=sf.read()
+str1=s.replace('A','tmp').replace('T','A').replace('tmp','T')
+str1=str1.replace('G','tmp').replace('C','G').replace('tmp','C')
+fwrite=open('rev_out.txt','w')
+fwrite.write(str1[::-1])
+sf.close()
+fwrite.close()
