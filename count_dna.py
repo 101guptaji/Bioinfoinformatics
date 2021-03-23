@@ -1,0 +1,10 @@
+# Python code to illustrate read() mode 
+f=input()
+file = open(f, "r") 
+n=file.read() 
+print(n)
+a=n.count("A")
+c=n.count("C")
+g=n.count("G")
+t=n.count("T")
+print(a,c,g,t,sep=" ")

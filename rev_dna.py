@@ -1,0 +1,11 @@
+# Reverse of DNA string 
+f=input()
+file = open(f, "r") 
+n=file.read() 
+str1=n.replace('A','%tmp%').replace('T','A').replace('%tmp%','T')
+str1=str1.replace('G','%tmp%').replace('C','G').replace('%tmp%','C')
+print(str1[::-1])
+file.close()
+f2=open('out.txt','w')
+f2.write(str1[::-1])
+f2.close()
